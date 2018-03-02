@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^([0-9_-]+)$ profile.php?user_id=$1
+RewriteRule ^([0-9_-]+)/$ profile.php?user_id=$1
+Options -indexes
+
+php_flag magic_quotes_gpc Off

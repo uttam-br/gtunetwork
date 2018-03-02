@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/4fsTWUM100DESRCrYMRNTfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/qEjAkCC_I8-NsX6aYiQHCfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/cSNs3NwpEgPVRQzvkh3NeQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+*{ box-sizing: border-box; }
+
+@media (min-width:768px) {
+
+body{
+	font-family: 'Nunito', sans-serif;
+	background-color: #fff;
+}
+.top_bar {
+	background-color: #2b4d62;
+	height: 70px;
+	margin-bottom:10px;
+	padding:5px;
+	border-bottom:1px solid #000;
+}
+.mobile_top_bar {
+	background-color: #2b4d62;
+	height: 70px;
+	margin-bottom:10px;
+	padding:5px;
+	border-bottom:1px solid #000;
+}
+.top_bar form{
+	text-align:right;
+}
+.top_bar form input {
+	width:30%; font-size:14px;
+	padding:1px 5px;
+	border:1px solid #ccc;
+}
+.intro { text-align: center; margin:20px; color:#666; }
+
+.mobile_logo {
+	font-family: 'Poiret One', cursive;
+	padding:2px 5px;
+	font-size: 35px;
+	color:#fff;
+	background-color: #2b4d62;
+	border:1px solid #2b4d62;
+}
+.top_bar input[type='submit']{ 
+	width: 20%;
+	border:1px solid #ccc;
+	color: #2b4d62;
+}
+.top_bar input[type='submit']:hover{
+	color:#000;
+	border-color:#fff;
+}
+#login_form{
+	margin:5px;
+}
+.middle_bar{
+	margin:auto;
+	margin-top:30px;
+}
+.signup_form{
+	margin:auto;
+	text-align: right;
+}
+.pwreset_middle_column {
+	margin-top:10px;
+	padding:30px;
+	border:1px solid #eee;
+	text-align: center;
+}
+.pwreset_middle_column p {
+	font-size:20px;
+}
+.middle_bar form{
+	margin:10px;
+	background-color: transparent;
+}
+.middle_bar form input{
+	font-size:15px;
+	padding:5px;
+	width:55%;
+	font-size:14px;
+	margin:2px auto;	
+	border-radius: 2px;
+	border:1px solid #ddd;
+}
+.middle_bar form input[type='submit']{
+	width:55%;
+	margin:10px auto;
+	background-color:transparent;
+	padding:5px;
+	border:1px solid #2b4d62;
+}
+.middle_bar form input[type='submit']:hover{
+	background-color: #2b4d62;
+	color:#fff;
+}
+.division{
+	height:550px;
+	border-left: 1px solid #aaa;
+}
+.errors{
+	color: #f03c3c;
+	margin:10px;
+	font-size:14px;
+}
+.logo a {
+	margin-top:20px; font-size:35px; color:#ddd;
+	font-family: 'Poiret One', cursive;
+}
+.logo a:hover { text-decoration: none; color:#fff; }
+.login_form_column {
+	position:absolute;
+	right:10px;
+}
+.column {
+	margin-top:20px;
+}
+.welcome_logo p{
+	font-size:40px;
+	color:#fff;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+
+.middle_column {
+	border:1px solid #eee;
+	border-radius: 3px;
+	width: 50%;
+	padding: 30px;
+}
+.input_label {
+	font-size:18px;
+	margin:5px 0;
+}
+#welcomePageForm {
+	margin: 20px 0;
+	font-size:17px;
+}
+#welcomePageForm input{
+	display: block;
+	margin:5px 0;
+}
+#welcomePageForm input[type='text'], input[type='email'] ,input[type='submit']{
+	width : 100%;
+	font-size: 16px;
+	padding:5px 10px;
+}
+#welcomePageForm input[type='submit']{
+	margin-top:30px;
+	border:1px solid #2b4d62;
+}
+.error_msg {
+	text-align: right;
+	color:red;
+}
+.welcomepage_logout_button a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.signup_alt_btn {
+	text-align: right;
+	margin:10px;
+}
+.alt_btn{
+	width: 27.25%;
+	background-color: transparent;
+	border:1px solid #2b4d62;
+	padding:5px;
+}
+.active{
+	border:1px solid #2b4d62;
+	background-color: #2b4d62; color:#fff;
+}
+
+.wru {
+	padding:5px;
+	width: 100%;
+	padding-right:10px;
+	margin-right:10px;
+	text-align: right;
+	font-size:16px;
+	font-weight: bold;
+}
+.welcomepage_column {
+	top:60px;
+	border:1px solid #eee;
+}
+
+
+.acc_rec_middle_col {
+	width: 60%;
+	margin:30px auto;
+	padding:30px;
+	border:1px solid #eee;
+}
+#rec_form {
+	text-align: center;
+}
+
+#rec_form input{
+	width:50%;
+	border:1px solid #bbb;
+	padding:5px;
+	text-align: center;
+	margin:5px 25%;
+	font-size: 14px;
+}
+#rec_form input[type='submit'] {
+	border:1px solid #2b4d62;
+	background-color: #eee;
+	padding:5px;
+	font-size:14px;
+}
+#rec_form input[type='submit']:hover {
+	background-color: #2b4d62;
+	padding:5px;
+	color:#fff;
+	font-size:14px;
+}
+.mobile_top_logo {
+	display: none;
+}
+
+
+}
+
+.instruction_p {
+	color:#2b4d62;
+}
+
+@media (max-width: 768px) {
+
+	body {
+		font-family: 'Nunito', sans-serif;
+		background-size: cover;
+		background: url('../../res/img/mobile_bg.jpg') no-repeat fixed;
+	}
+	.logo {
+		display: none;
+	}
+	.mobile_top_logo a {
+		border:1px solid #eee;
+		text-align: center;
+		font-family: 'Poiret One', cursive;
+		font-size:25px;
+		padding:2px 5px;
+		background-color: #2b4d62;
+		color:#fff;
+		text-decoration: none;
+	}
+	.mobile_logo {
+		border:1px solid #eee;
+		text-align: center;
+		font-family: 'Poiret One', cursive;
+		font-size:25px;
+		padding:2px 5px;
+		background-color: #2b4d62;
+		color:#fff;
+	}
+	.mobile_top_bar {
+		background-color: #eee;
+		height: 50px;
+		margin-bottom:10px;
+		padding:5px;
+		border-bottom:1px solid #2b4d62;
+	}
+	.top_bar {
+		background-color: #eee;
+		height: 100px;
+		margin-bottom:10px;
+		padding:5px;
+		position: static;
+		border-bottom:1px solid #2b4d62;
+	}
+	.login_inputs {
+		display: flex;
+	}
+	#login_form input {
+		width:50%;
+		margin-bottom:2px;
+		border:1px solid #eee;
+		padding:4px 10px;
+		font-size:14px;
+		font-weight: bold;
+	}	
+
+	#login_form input[type='submit'] {
+		background-color:#2b4d62;
+		color:#fff;
+		margin-top:5px;
+		width: 100%;
+	}
+	.middle_bar {
+		position: static;
+	}
+
+	.signup_form {
+		margin:20px 0;
+	}
+
+	.signup_form input{
+		width: 100%;
+		border:none;
+		background:transparent;
+		border:1px solid #999;
+		color:#000;
+		font-weight: 	bold;
+		margin-bottom: 8px;
+		border-radius: 0px;
+		padding:5px 10px;
+	}
+
+	.signup_form input[type='submit'] {
+		margin-top:10px;
+		border:1px solid #2b4d62;
+	}
+
+	.errors {
+		font-size: 12px;
+		color:red;
+		text-align: center;
+	}
+
+	.middle_bar form input {
+		width:100%;
+		margin:10px 0;
+		padding:2px 5px;
+	}
+	.middle_bar form input[type='submit'] {
+		border:1px solid #2b4d62;
+		padding:5px 5px;
+		margin-top:5px;
+	}
+
+	.signup_alt_btn {
+		width: 100%;
+		display: flex;
+	}
+	.alt_btn{
+		width:50%;
+		background-color: transparent;
+		border:1px solid #2b4d62;
+		padding:2px 5px;
+		margin:5px 0px;
+		margin-bottom: 0;
+	}
+	.wru {
+		padding:5px;
+		width: 100%;
+		text-align: center;
+		font-size:16px;
+		font-weight: bold;
+	}
+	.active{
+		background-color: #2b4d62; color:#fff;
+	}
+
+	.description {
+		display: none;
+	}
+
+	.pw_mobile_logo {
+		font-family: 'Poiret One', cursive;
+		font-size: 45px;
+		color:#fff;
+		background-color: #2b4d62;
+		border:1px solid #2b4d62;
+		width:98%;
+		margin:2px 1%;
+		padding:10px;
+		text-align: center;
+	}
+
+	#pw_reset_form input {
+		background-color: transparent;
+		border: 1px solid #2b4d62;
+		border-radius: 2px;
+		padding:4px;
+	}
+	.pwreset_middle_column {
+		text-align: center;
+	}
+	#resend_code_btn {
+		border:1px solid #2b4d62;
+		color:#000;
+	}
+
+	.acc_rec_middle_col {
+		width: 95%;
+		margin:10px auto;
+		padding:5px;
+		border:none;
+	}
+	#rec_form {
+		text-align: center;
+	}
+
+	#rec_form input{
+		width:98%;
+		border:1px solid #bbb;
+		padding:5px;
+		background-color: transparent;
+		color:#000;
+		font-weight: bold;
+		text-align: center;
+		margin:5px 1%;
+		font-size: 14px;
+	}
+	#rec_form input[type='submit'] {
+		border:1px solid #2b4d62;
+		background-color: #eee;
+		padding:5px;
+		font-size:14px;
+	}
+	#rec_form input[type='submit']:hover {
+		background-color: #2b4d62;
+		padding:5px;
+		color:#fff;
+		font-size:14px;
+	}
+
+	.welcomepage_column {
+		top:0px;
+	}
+
+	.mobile_signup_p {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.welcomepage_logout_button a {
+		border:1px solid #2b4d62;
+		position: relative;
+		top:5px;
+	}
+}
+
+.viy_leg {
+	margin:10px 0;
+	padding:5px;
+	font-size: 20px;
+}
