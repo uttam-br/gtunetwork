@@ -45,7 +45,7 @@ class Message {
 
 		$update_query = mysqli_query($this->conn,"UPDATE messages SET opened='yes' WHERE user_to='$user_id' AND user_from='$otherUser' ");
 
-		$get_messages_query = mysqli_query($this->conn,"SELECT * FROM messages WHERE (user_to='$user_id' AND user_from='$otherUser') OR (user_from='$user_id' AND user_to='$otherUser') ");
+		$get_messages_query = mysqli_query($this->conn,"SELECT * FROM messages WHERE (user_to='$user_id' AND user_from='$otherUser') OR (user_from='$user_id' AND user_to='$otherUser') ORDER BY id");
 
 		if(mysqli_num_rows($get_messages_query) > 0) {
 		$day = "";

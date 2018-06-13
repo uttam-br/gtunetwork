@@ -25,7 +25,9 @@
 
 body{
 	font-family: 'Nunito', sans-serif;
-	background-color: #fff;
+	background-image: url('../../res/img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .top_bar {
 	background-color: #2b4d62;

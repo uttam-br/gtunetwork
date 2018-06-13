@@ -39,7 +39,7 @@ a {
 	font-family: 'Nunito',sans-serif; 
 }
 body{
-		background-color: #e6ecf0;
+		background-color: rgb(245,245,245);
 }
 .top_bar{
 	position: fixed; top:0;	right:0; left:0;
@@ -73,7 +73,7 @@ body{
 .column{
 	margin:10px;
 	background-color: #fff;
-	border:none;
+	border:1px solid #ddd;
 	border-radius: 2px;
 }
 .user_profile{
@@ -2131,6 +2131,9 @@ legend a {
 	}
 	.home_main_column_links h1 {
 		font-size:14px;
+		width:200px;
+		margin:auto;
+		margin-bottom: 10px;	
 		background-color: #2b4d62;
 		color:#fff;
 		padding:5px;
@@ -2153,7 +2156,6 @@ legend a {
 		padding:5px;
 	}
 	.search_section form {
-		border:none;
 		border-radius: 	2px;
 	}
 	#search_input {
@@ -2669,3 +2671,4 @@ legend a {
 	font-size: 8px;
 	line-height: 10px;
 }
+

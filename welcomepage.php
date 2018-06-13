@@ -20,16 +20,16 @@ require 'PHPMailer/src/SMTP.php';
 
     $mail->SMTPDebug = 0;                                 
     $mail->isSMTP();                                      
-    $mail->Host = 'gtunetwork.com';  
+    $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                               
-    $mail->Username = 'info@gtunetwork.com';                 
-    $mail->Password = 'uttam@1997';                           
+    $mail->Username = 'uttam.rabari.edx@gmail.com';                 
+    $mail->Password = 'uttam@7819';                           
     $mail->SMTPSecure = 'ssl';                            
     $mail->Port = 465;                                    
 
-    $mail->setFrom('info@gtunetwork.com', 'GTUnetwork');
+    $mail->setFrom('uttam.rabari.edx@gmail.com', 'Uttam Rabari');
     $mail->addAddress($email);     // Add a recipient
-    $mail->addReplyTo('info@gtunetwork.com');
+    $mail->addReplyTo('uttam.rabari.edx@gmail.com');
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
