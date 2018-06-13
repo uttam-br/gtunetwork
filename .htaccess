@@ -1,5 +1,6 @@
 RewriteEngine On
-
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteRule ^([0-9_-]+)$ profile.php?user_id=$1
 RewriteRule ^([0-9_-]+)/$ profile.php?user_id=$1
 Options -indexes
