@@ -19,8 +19,8 @@ $total = $num_requests + $num_notifications + $num_messages;
 <body>
 
 <div class='fluid-container top_bar'>
-	<div class='col-md-1 logo'>
-		<a href='home.php'>GTUnetwork</a>
+	<div class='col-xs-1 logo'>
+		<a class='nav-brand' href='home.php'>GTUnetwork</a>
 	</div>
 	<div class='mobile_nav'>
 		<button id='nav_button'><i class="fa fa-bars" aria-hidden="true"></i></button>
@@ -215,17 +215,16 @@ $total = $num_requests + $num_notifications + $num_messages;
 	</div>
 	 		
 	<div class="col-md-6 home_main_column column">
-		<legend class='home_legend'><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</legend>
 		<div class='home_main_column_links'>
-			<a href='feed.php'><div class='home_main_column_link'><h1><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;&nbsp;News Feed</h1><span class='link_description'>This is where you can see posts from your friends and everyone at your college.</span></div></a>
-			<a href='profile.php'><div class='home_main_column_link'><h1><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Profile</h1><span class='link_description'>This is where you can see detail about your profile.</span></div></a>
-			<a href='myclass.php'><div class='home_main_column_link'><h1><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Class</h1><span class='link_description'><?php if($user->getType()=='student') echo "This is where pre-formed group of you and your classmate will be visible. You can share and access assignments, practicals and notes here."; else echo "This is where you can make announcment, send assignments/practicals as well as notify class of students."; ?></span></div></a>
+			<a href='feed.php'><div class='home_main_column_link'><h1><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;&nbsp;News Feed</h1><p class='text-center link_description'>This is where you can see posts from your friends and everyone at your college.</p></div></a>
+			<a href='profile.php'><div class='home_main_column_link'><h1><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Profile</h1><p class='text-center link_description'>This is where you can see detail about your profile.</p></div></a>
+			<a href='myclass.php'><div class='home_main_column_link'><h1><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Class</h1><p class='text-center link_description'><?php if($user->getType()=='student') echo "This is where pre-formed group of you and your classmate will be visible. You can share and access assignments, practicals and notes here."; else echo "This is where you can make announcment, send assignments/practicals as well as notify class of students."; ?></p></div></a>
 			<?php
 			if($user->getType()=='student') {
-			echo "<a href='study.php'><div class='home_main_column_link'><h1><i class='fa fa-book' aria-hidden='true'></i>&nbsp;&nbsp;Study Material</h1><span class='link_description'>This is where you will find the syllabus, previous year question papers, books and etc. sorted semester wise.</span></div></a>
-			<a href='bookstore.php'><div class='home_main_column_link'><h1><i class='fa fa-leanpub' aria-hidden='true'></i>&nbsp;&nbsp;Bookstore</h1><span class='link_description'>This is where you can sell or buy used books.</span></div></a>";
+			echo "<a href='study.php'><div class='home_main_column_link'><h1><i class='fa fa-book' aria-hidden='true'></i>&nbsp;&nbsp;Study Material</h1><p class='text-center link_description'>This is where you will find the syllabus, previous year question papers, books and etc. sorted semester wise.</p></div></a>
+			<a href='bookstore.php'><div class='home_main_column_link'><h1><i class='fa fa-leanpub' aria-hidden='true'></i>&nbsp;&nbsp;Bookstore</h1><p class='text-center link_description'>This is where you can sell or buy used books.</p></div></a>";
 			} ?>
-			<a href='feedback.php'><div class='home_main_column_link'><h1><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Feedback</h1><span class='link_description'>This is where you can provide your views about the website. If you face any problem, please take a moment and report it here.</span></div></a>
+			<a href='feedback.php'><div class='home_main_column_link'><h1><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Feedback</h1><p class='text-center link_description'>This is where you can provide your views about the website. If you face any problem, please take a moment and report it here.</p></div></a>
 
 		</div>
 
@@ -233,9 +232,8 @@ $total = $num_requests + $num_notifications + $num_messages;
 
 </div> <!-- middle bar div -->
 
-
-
 <div id='messanger' class='col-md-3' style="display:none;"></div>
+
 
 <script type="text/javascript">
 	$(document).ready(function(){

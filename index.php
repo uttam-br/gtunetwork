@@ -132,12 +132,10 @@
  </div>
 
  <div class='col-md-6'>
-
+<br>
   <div class='signup_alt_btn'> 
     <button class='active alt_btn' id='student_form_btn'>Student</button> <button class='alt_btn' id='fac_form_btn'>Faculty</button>
   </div>
-
-   
 
   <form id="signup_student_form" class='signup_form' method="post" action="index.php">
     
