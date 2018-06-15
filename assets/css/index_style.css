@@ -409,7 +409,7 @@ body{
 	.acc_rec_middle_col {
 		width: 95%;
 		margin:10px auto;
-		padding:5px;
+		padding:5px 20px ;
 		border:none;
 	}
 	#rec_form {

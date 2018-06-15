@@ -126,7 +126,20 @@
 
     <div class='intro'>
       <p class='mobile_logo'>GTUnetwork</p>
-      <p class='description' style="border:1px solid #eee; padding:10px;">GTUNetwork aims at making communication between faculties and students more effective. Here you will find all your class assignments, practicals as well as notes from faculties as well as shared by other classmates. There is News Feed which keeps you up to date with information about whats going on in the college. In study material section we provide you with all the necessary material you'll need in your semester studies. And there is also 'Bookstore' section where you can sell your old books and buy used books from others.</p>
+      <div class='description' style="border:1px solid #eee; padding:10px;">
+        <dl>
+        <dt>Primary Vision</dt>
+          <dd>GTUNetwork aims at making communication between faculties and students more effective.</dd>
+        <dt>Class Section</dt>
+          <dd>Here you will find all your class assignments, practicals as well as notes from faculties as well as shared by other classmates.</dd>
+        <dt>News Feed</dt>
+          <dd>There is News Feed which keeps you up to date with information about whats going on in the college.</dd>
+        <dt>Study Material</dt>
+          <dd>In study material section we provide you with all the necessary material you'll need in your semester studies.</dd>
+        <dt>Bookstore</dt>
+          <dd>This is where you can sell your old books and buy used books from others.</dd>
+        </dl>
+      </div>
     </div>
 
  </div>
